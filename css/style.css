@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: white;
+    font: 14px Verdana;
+    margin: 0;
+  }
+  .container{
+    padding: 0 1rem;
+    width: 100%;
+}
+/* ------------------------------------------------- */
+/*--------------------- header ----------------------*/
+.header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background-color: #f4f1f1;
+}
+:root{
+    /* couleurs */
+    --primary-color: rgb(223, 135, 3);
+    --secondary-color:rgb(245, 205, 131);
+    --text-color: #818080;
+    --bg: #f4f1f1;
+    --bg-section: #08659f;
+
+}
+.nav_link{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav_link a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--primary-color);
+   }
+   .nav_link .a:hover{
+       transition: 0.4s;
+       background-color: var(--secondary-color);
+   }
+   .navbar_menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.a{
+    padding: 1.5rem 1rem;
+    min-width: 12rem;
+    text-align: center;
+    text-justify: center;
+}
+.logo{
+    margin: 0 1rem 0 0;
+}
+.search{
+    margin: 0 1rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(166, 164, 164);
+}
+.s{
+    width: 40px;
+    height: 40px;
+}
+.s:hover{
+    cursor: pointer;
+}
+.input-search{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    background-color: rgb(166, 164, 164);
+    color: rgb(78, 76, 76);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+}
+.input-search::placeholder{
+    color: rgb(214, 211, 211);
+    font-weight: bold;
+}
+
+
+/* ================================================Page 1======================================= */
+
+/* ------------------------------------------------- */
+/*--------------------- body ----------------------*/
+
+.content-body{
+    margin-top: 6rem;
+}
+.row{
+    display: flex;
+    padding: 0 1rem;
+    margin: 0;
+}
+.col4{
+    width: 30%;
+}
+
+.col6{
+    width: 50%;
+}
+
+.col8{
+    width: 70%;
+}
+
+.col12{
+    width: 100%;
+}
+.left{
+    float: left;
+}
+.rigth{
+    float: right;
+}
+
+/* -------------------- card de notification -----------*/
+.card-notif{
+    background-color: var(--bg);
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border-radius: 40px;
+    height: 600px;
+    width: 80%;
+}
+.notif-entete{
+    width: auto;
+    height: 200px;
+    margin: 0.3rem ;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.img-entete{
+width: 100%;
+border-radius: 20px;
+border: 5px solid #e9e6e6;
+margin-bottom: 1 rem;
+}
+.text-entete{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    top: 45px;
+}
+.t{
+    margin-bottom: 3px;
+}
+
+.notif-body{
+    margin: 1rem 0;
+    padding: 4.5rem 1rem;
+    font-size: 20px;
+    border-radius: 40px;
+    text-align: center;
+    text-justify:auto;
+    background-color: white;
+    border: 4px solid var(--primary-color);
+}
+
+.t1{
+    margin-bottom: 1rem;
+}
+
+/* ---------------------------------------card body------------------------ */
+.content-all-card {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.card-entete{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.card-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-card{
+    margin: 0 1rem 0 0;
+    max-width: 7rem;
+}
+.card-list {
+    font-family:sans-serif;
+    display: flex;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 15px;
+    background-color: var(--bg);
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.card-2{
+    width: 30rem;
+}
+/* ___________________carre rouge__________ */
+.pr{
+    position: relative;
+}
+.carre{
+    width: 50px;
+    height: 40px;
+    border: 1px black solid;
+    background-color: rgb(183, 8, 8);
+    position: absolute;
+}
+.c1{
+    top: 25px;
+    left: -50px;
+}
+.c2{
+    top: 10px;
+    right: 0;
+}
+.c3{
+    top:70px ;
+    right: 0;
+}
+.c4{
+    bottom:0 ;
+    right: 15px;
+}
+.c5{
+    top:70px ;
+    right: 0;
+}
+.c6{
+    bottom: 25px;
+    right: 20px;
+}
+.c7{
+    bottom: 8px;
+    right: 0;   
+}
+.c8{
+    bottom: 25px;
+    right: 0;
+}
+.c9{
+    top: 0;
+    right: 25px;
+}
+
+
+/* ============================================Page 2- gc =========================================  */
+/* ------------------------------------------------- */
+/*--------------------- body ----------------------*/
+
+
+
+/* ----------------Formulaire---------- */
+.content-form{
+    box-sizing: border-box;
+    margin-top: 5rem;
+    height: 80%;
+    font-size: 16px;
+}
+.button-load{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 5px;
+    top: -70px;
+}
+.text-load{
+    color: rgb(0, 132, 255);
+    font-weight: bold;
+}
+.form{
+    position: relative;
+    margin: 1rem 1rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    border-radius: 20px ;
+    border: 2px var(--secondary-color) dashed;
+    display: flex;
+    justify-content: space-between;
+}
+.form-title ,.section-title{
+    font-size: 18px;
+    position: absolute;
+    z-index: 20;
+    top: -35px;
+    left: 50px;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+}
+.content-form1{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    background-color: var(--secondary-color);
+    border: none;
+    outline: none;
+    padding: 1rem;
+    margin: 5px 0;
+    border-radius: 10px;
+    min-width: 20rem;
+    max-width: 25rem;
+    font-size: 16px ;
+}
+
+.btn-form{
+    display: flex;
+    margin: auto 0;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px var(--secondary-color) dashed;
+    height: 40px;
+}
+.btn-form1{
+    min-width: 12rem;
+}
+.text-tranfert{
+    margin: 0.3rem 1rem;
+}
+.btn-form2{
+    min-width: 25rem;
+    margin: 1rem;
+}
+.rec{
+    width: 45px;
+    height: 30px;
+    border: 1px black solid;
+    background-color: rgb(183, 8, 8);
+    position: absolute;
+}
+.c10{
+    top: 90px;
+    left: 28rem ;
+}
+.c11{
+    top: 40px;
+    left: 27.5rem;
+}
+.c12{
+    top: 80px;
+    right: 0;
+}
+.c13{
+    top: 80px;
+    right: 20px;
+}
+
+/* ============================================Page 3-  site =========================================  */
+/* ------------------------------------------------- */
+/*--------------------- body ----------------------*/
+.content-all-section{
+    font-size: 18px;
+
+}
+.section{
+    position: relative;
+    margin: 1rem 1rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    border: 2px var(--bg-section) dashed;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.lib{
+    margin: 1rem;
+    font-size: 17px;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+.radio{
+    margin: 0.5rem 2rem;
+    background-color: var(--bg);
+    appearance: none;
+    height: 1.3rem;
+    width: 1.5rem;
+    border-radius: 5px;
+    border: 1.5px var(--bg-section) dashed;
+}
+/* __________________left_________________ */
+
+
+.content-section-left{
+    box-sizing: border-box;
+    margin-top: 2rem;
+    height: 80%;
+    font-size: 16px;
+}
+
+.section-left1{
+    border-radius: 50px ;
+}
+.section-left2{
+    border-radius: 25px ;
+}
+
+/* __________________ right ________________ */
+.content-section-right{
+    box-sizing: border-box;
+    margin-top: 3rem;
+    /* height: 80%; */
+    font-size: 16px;
+}
+.section-right1{
+    border-radius: 50px ;
+}
+.section-right2{
+    border-radius: 30px ;
+}
+
+.radio2{
+    margin: 0.5rem;
+    background-color: var(--bg);
+    appearance: none;
+    height: 1.3rem;
+    width: 1.5rem;
+    border-radius: 5px;
+    border: 1.5px var(--bg-section) dashed;
+}
+.title-radio{
+    display: flex;
+}
+
+/* ============================================Page 3-  parametre =========================================  */
+/* ------------------------------------------------- */
+/*--------------------- body ----------------------*/
+
+.content-param{
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    color: rgb(6, 191, 6);
+}
+.param1{
+    text-align: center;
+    position: relative;
+}
+.img-param{
+    margin: 0.5rem 2rem;
+    height: 10rem;
+}
