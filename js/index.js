@@ -17,3 +17,4 @@ const date = today.toLocaleDateString('fr-FR',{
 document.querySelector('#hour').innerHTML= hour;
 
 document.querySelector('#date').innerHTML= date;
+

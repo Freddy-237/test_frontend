@@ -15,6 +15,10 @@
 }
 /* ------------------------------------------------- */
 /*--------------------- header ----------------------*/
+.navbar{
+    display: flex;
+    align-items: center;
+}
 .header{
     position: fixed;
     z-index: 1000;
@@ -24,7 +28,7 @@
 :root{
     /* couleurs */
     --primary-color: rgb(223, 135, 3);
-    --secondary-color:rgb(245, 205, 131);
+    --secondary-color:rgb(241, 211, 153);
     --text-color: #818080;
     --bg: #f4f1f1;
     --bg-section: #08659f;
@@ -39,7 +43,7 @@
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
     color: var(--primary-color);
    }
    .nav_link .a:hover{
@@ -48,12 +52,12 @@
    }
    .navbar_menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .a{
     padding: 1.5rem 1rem;
-    min-width: 12rem;
+    min-width: 13rem;
     text-align: center;
     text-justify: center;
 }
@@ -61,18 +65,15 @@
     margin: 0 1rem 0 0;
 }
 .search{
-    margin: 0 1rem;
-    width: 25%;
+    margin: 0 2rem;
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     background-color: rgb(166, 164, 164);
 }
-.s{
-    width: 40px;
-    height: 40px;
-}
+
 .s:hover{
     cursor: pointer;
 }
@@ -86,7 +87,7 @@
     color: rgb(78, 76, 76);
     font-size: 20px;
     text-align: center;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
     font-weight: bold;
 }
 .input-search::placeholder{
@@ -101,7 +102,7 @@
 /*--------------------- body ----------------------*/
 
 .content-body{
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 .row{
     display: flex;
@@ -109,7 +110,7 @@
     margin: 0;
 }
 .col4{
-    width: 30%;
+    width: 33%;
 }
 
 .col6{
@@ -117,6 +118,12 @@
 }
 
 .col8{
+    width: 67%;
+}
+.col3{
+    width: 30%;
+}
+.col9{
     width: 70%;
 }
 
@@ -135,27 +142,35 @@
     background-color: var(--bg);
     margin: 1rem auto;
     padding: 0.5rem;
-    border-radius: 40px;
-    height: 600px;
-    width: 80%;
+    border-radius: 60px;
+    height: 670px;
+
 }
 .notif-entete{
-    width: auto;
+    width: 95%;
     height: 200px;
-    margin: 0.3rem ;
+    margin: 0.3rem auto;
     box-sizing: border-box;
     position: relative;
 }
-
+.n-entete2{
+    width: 100%;
+    height: 200px;
+    margin: 0.3rem auto;
+    box-sizing: border-box;
+    position: relative;
+}
 .img-entete{
 width: 100%;
-border-radius: 20px;
+height: 100%;
+border-radius: 30px;
 border: 5px solid #e9e6e6;
 margin-bottom: 1 rem;
 }
+
 .text-entete{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 26px;
     color: white;
     text-align: center;
     z-index: 5;
@@ -163,15 +178,29 @@ margin-bottom: 1 rem;
     width: 100%;
     top: 45px;
 }
+.t-entete2{
+    font-family: 'Lucida Sans';
+    font-weight: 500;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    width: 18rem;
+    left: 25px;
+    top: 45px;
+}
 .t{
-    margin-bottom: 3px;
+    margin-bottom: 8px;
 }
 
+
 .notif-body{
-    margin: 1rem 0;
-    padding: 4.5rem 1rem;
+    height: 65%;
+    margin: 5px 10px;
+    padding: 4.5rem 3rem;
     font-size: 20px;
-    border-radius: 40px;
+    border-radius: 60px;
     text-align: center;
     text-justify:auto;
     background-color: white;
@@ -180,10 +209,12 @@ margin-bottom: 1 rem;
 
 .t1{
     margin-bottom: 1rem;
+    font-size: 26px;
 }
 
 /* ---------------------------------------card body------------------------ */
 .content-all-card {
+    margin-top: 2rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -194,33 +225,39 @@ margin-bottom: 1 rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 70%;
+    width: 80%;
+    margin: 5px;
 }
 
 .card-body{
+    margin: 0 !important;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .img-card{
-    margin: 0 1rem 0 0;
+    margin: 0;
     max-width: 7rem;
 }
 .card-list {
-    font-family:sans-serif;
+    font-family: "Architects Daughter", serif;
+    font-weight: bold;
     display: flex;
     padding: 0.5rem 1rem;
-    margin: 0.5rem;
     border-radius: 15px;
     background-color: var(--bg);
     align-items: center;
     justify-content: space-around;
     text-decoration: none;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 41px;
     color: var(--primary-color);
+}
+.card-1{
+    max-width: 40rem;
 }
 .card-2{
     width: 30rem;
+    margin: 0 8px 25px 5px;
 }
 /* ___________________carre rouge__________ */
 .pr{
@@ -235,7 +272,7 @@ margin-bottom: 1 rem;
 }
 .c1{
     top: 25px;
-    left: -50px;
+    left: -30px;
 }
 .c2{
     top: 10px;
@@ -280,9 +317,9 @@ margin-bottom: 1 rem;
 /* ----------------Formulaire---------- */
 .content-form{
     box-sizing: border-box;
-    margin-top: 5rem;
+    margin-top: 7rem;
     height: 80%;
-    font-size: 16px;
+    font-size: 18px;
 }
 .button-load{
     position: absolute;
@@ -297,7 +334,7 @@ margin-bottom: 1 rem;
 }
 .form{
     position: relative;
-    margin: 1rem 1rem;
+    margin: 0 0 0 2rem;
     margin-bottom: 4rem;
     padding: 1rem;
     border-radius: 20px ;
@@ -306,16 +343,17 @@ margin-bottom: 1 rem;
     justify-content: space-between;
 }
 .form-title ,.section-title{
-    font-size: 18px;
+    font-size: 22px;
     position: absolute;
     z-index: 20;
-    top: -35px;
+    top: -40px;
     left: 50px;
     border-radius: 10px 10px 0 0;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     background-color: var(--secondary-color);
 }
 .content-form1{
+    font-size: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -323,23 +361,25 @@ margin-bottom: 1 rem;
     background-color: var(--secondary-color);
     border: none;
     outline: none;
-    padding: 1rem;
+    padding: 1.4rem;
     margin: 5px 0;
     border-radius: 10px;
-    min-width: 20rem;
-    max-width: 25rem;
+    min-width: 30rem;
     font-size: 16px ;
+}
+.content-btn-form{
+    margin-top: 1.6rem;
 }
 
 .btn-form{
     display: flex;
-    margin: auto 0;
+    margin: 2.5rem 1rem 1rem 0;
     padding: 0.5rem 1rem;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
     border: 2px var(--secondary-color) dashed;
-    height: 40px;
+    height: 45px;
 }
 .btn-form1{
     min-width: 12rem;
@@ -348,7 +388,7 @@ margin-bottom: 1 rem;
     margin: 0.3rem 1rem;
 }
 .btn-form2{
-    min-width: 25rem;
+    min-width: 32rem;
     margin: 1rem;
 }
 .rec{
@@ -359,20 +399,20 @@ margin-bottom: 1 rem;
     position: absolute;
 }
 .c10{
-    top: 90px;
-    left: 28rem ;
+    top: 132px;
+    left: 35rem ;
 }
 .c11{
-    top: 40px;
-    left: 27.5rem;
+    top: 66px;
+    left: 34.5rem;
 }
 .c12{
-    top: 80px;
-    right: 0;
+    top: 150px;
+    right: 20px;
 }
 .c13{
-    top: 80px;
-    right: 20px;
+    top: 150px;
+    right: 40px;
 }
 
 /* ============================================Page 3-  site =========================================  */
@@ -380,6 +420,7 @@ margin-bottom: 1 rem;
 /*--------------------- body ----------------------*/
 .content-all-section{
     font-size: 18px;
+    margin-top: 5.5rem;
 
 }
 .section{
@@ -411,6 +452,9 @@ margin-bottom: 1 rem;
     border-radius: 5px;
     border: 1.5px var(--bg-section) dashed;
 }
+.radio:checked {
+    border: 6px solid var(--bg-section);
+  }
 /* __________________left_________________ */
 
 
@@ -461,7 +505,7 @@ margin-bottom: 1 rem;
 
 .content-param{
     position: relative;
-    padding: 2rem;
+    padding: 2rem 1rem;
     display: flex;
     color: rgb(6, 191, 6);
 }
@@ -470,6 +514,6 @@ margin-bottom: 1 rem;
     position: relative;
 }
 .img-param{
-    margin: 0.5rem 2rem;
+    margin: 4rem 3rem 1rem 2rem;
     height: 10rem;
 }
