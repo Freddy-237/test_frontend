@@ -419,13 +419,13 @@ margin-bottom: 1 rem;
 /* ------------------------------------------------- */
 /*--------------------- body ----------------------*/
 .content-all-section{
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 5.5rem;
 
 }
 .section{
     position: relative;
-    margin: 1rem 1rem;
+    margin: 1rem ;
     margin-bottom: 4rem;
     padding: 1rem;
     border: 2px var(--bg-section) dashed;
@@ -436,7 +436,7 @@ margin-bottom: 1 rem;
 
 .lib{
     margin: 1rem;
-    font-size: 17px;
+    font-size: 20px;
 }
 .option{
     display: flex;
@@ -444,7 +444,7 @@ margin-bottom: 1 rem;
     margin-top: 0.5rem;
 }
 .radio{
-    margin: 0.5rem 2rem;
+    margin: 0.6rem 2rem;
     background-color: var(--bg);
     appearance: none;
     height: 1.3rem;
@@ -462,7 +462,7 @@ margin-bottom: 1 rem;
     box-sizing: border-box;
     margin-top: 2rem;
     height: 80%;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .section-left1{
@@ -470,6 +470,7 @@ margin-bottom: 1 rem;
 }
 .section-left2{
     border-radius: 25px ;
+    margin-top: 5.5rem;
 }
 
 /* __________________ right ________________ */
@@ -477,7 +478,7 @@ margin-bottom: 1 rem;
     box-sizing: border-box;
     margin-top: 3rem;
     /* height: 80%; */
-    font-size: 16px;
+    font-size: 18px;
 }
 .section-right1{
     border-radius: 50px ;
